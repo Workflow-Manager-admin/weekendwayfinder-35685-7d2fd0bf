@@ -3,34 +3,48 @@
   height: 100vh;
 }
 
+/* Responsive, vibrant travel background (mountains, scenic, or generic travel image)
+   Using a golden-to-blue overlay for improved readability */
 .home-page {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   position: relative;
-  background: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  background: 
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  /* Fallback color if image fails */
+  background-color: #F7C873;
 }
 
+/* Multi-tone overlay to harmonize with app look, improve readability over scenic BG */
 .backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(247, 200, 115, 0.60);
+  /* Gold-to-transparent and blue-green gradient overlay */
+  background: linear-gradient(
+    125deg,
+    rgba(247,200,115,0.54) 0%,
+    rgba(45,95,93,0.34) 70%,
+    rgba(45,95,93,0.17) 100%
+  ), rgba(45,95,93,0.11);
   z-index: 0;
 }
 
 .home-content {
   position: relative;
   z-index: 1;
-  background: rgba(255,255,255,0.93);
+  background: rgba(255,255,255,0.95);
   padding: 2.2rem 2.5rem;
   border-radius: 1.7rem;
-  box-shadow: 0 4px 30px rgba(45,95,93,0.09);
+  box-shadow: 0 4px 30px rgba(45,95,93,0.11);
   text-align: center;
-  max-width: 420px;
+  max-width: 440px;
+  width: 96vw;
   animation: popin 0.8s;
 }
 
+/* Animates entrance gently */
 @keyframes popin {
   from {opacity: 0; transform: scale(0.97);}
   to {opacity: 1; transform: none;}
@@ -41,11 +55,13 @@ h1 {
   margin-bottom: 0.8rem;
   font-size: 2.2rem;
   font-weight: 600;
+  text-shadow: 0 2px 12px #fff9, 0 1px 3px #2D5F5D09;
 }
 .subtitle {
   color: #2D5F5D;
   margin-bottom: 2.1rem;
-  font-size: 1.1rem;
+  font-size: 1.13rem;
+  text-shadow: 0 1px 8px #fff7, 0 0px 2px #2D5F5D10;
 }
 .cta-btn {
   background-color: #2D5F5D;
@@ -56,19 +72,34 @@ h1 {
   padding: 0.9rem 2.1rem;
   border-radius: 2.5rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.18s;
 }
-.cta-btn:hover {
+.cta-btn:hover,
+.cta-btn:focus {
   background-color: #F25C54;
   color: #fff;
 }
 
+/* Mobile adjustments for home content */
 @media (max-width: 600px) {
+  .home-page {
+    min-height: 100vh;
+    height: auto;
+    padding: 0.6rem 0;
+  }
   .home-content {
-    padding: 1rem 0.4rem;
-    max-width: 98vw;
+    padding: 1.1rem 0.35rem;
+    max-width: 99vw;
+    border-radius: 1rem;
   }
   h1 {
-    font-size: 1.24rem;
+    font-size: 1.18rem;
+  }
+  .subtitle {
+    font-size: 0.97rem;
+  }
+  .cta-btn {
+    font-size: 1rem;
+    padding: 0.65rem 1.2rem;
   }
 }
