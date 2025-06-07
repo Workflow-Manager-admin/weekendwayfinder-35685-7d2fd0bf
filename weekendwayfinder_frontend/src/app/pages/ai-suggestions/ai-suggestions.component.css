@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(120deg,#F7C87322, #2D5F5D08 60%);
+  padding-bottom: 1.5rem;
+}
+.suggestions-page {
+  max-width: 888px;
+  margin: 0 auto;
+  padding: 2.2rem 0.6rem;
+}
+h2 {
+  color: #2D5F5D;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 1.5rem;
+}
+.trip-card {
+  background: #fff;
+  border-radius: 1.1rem;
+  box-shadow: 0 3px 14px #2D5F5D10;
+  padding: 1.2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadein 0.4s;
+}
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+h3 {
+  color: #F25C54;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.desc {
+  color: #2D5F5D;
+  font-size: 1.07rem;
+  margin-bottom: 0.7rem;
+}
+.meta {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.pill {
+  background: #F7C873;
+  color: #2D5F5D;
+  border-radius: 1.1rem;
+  padding: 0.18rem 0.7rem;
+  font-size: 0.89rem;
+  font-weight: 500;
+}
+.pill.mood {
+  background: #2D5F5D;
+  color: #fff;
+}
+.pill.budget {
+  background: #F25C54;
+  color: #fff;
+}
+.pill.distance {
+  background: #F7C873;
+  color: #2D5F5D;
+}
+
+@media (max-width: 400px) {
+  .suggestions-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,32 @@
+<div class="sign-in-page">
+  <div class="backdrop"></div>
+  <div class="sign-in-container">
+    <h2>WeekendWayfinder</h2>
+    <form (submit)="signIn(); $event.preventDefault()" novalidate>
+      <div>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          required
+          autocomplete="username"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          required
+          autocomplete="current-password"
+        />
+      </div>
+      <div *ngIf="error" class="error-message">{{ error }}</div>
+      <button type="submit" class="sign-in-btn">Sign In</button>
+    </form>
+  </div>
+</div>

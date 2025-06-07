@@ -1,0 +1,507 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.781 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.378 seconds]
+
+✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
+
+    src/app/app.routes.ts:9:36:
+      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/home/home.component"
+
+    src/app/app.routes.ts:13:36:
+      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
+
+    src/app/app.routes.ts:17:36:
+      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
+
+    src/app/app.routes.ts:9:36:
+      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/home/home.component"
+
+    src/app/app.routes.ts:13:36:
+      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
+
+    src/app/app.routes.ts:17:36:
+      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.007 seconds]
+
+✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
+
+    src/app/app.routes.ts:9:36:
+      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/home/home.component"
+
+    src/app/app.routes.ts:13:36:
+      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
+
+    src/app/app.routes.ts:17:36:
+      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
+
+    src/app/app.routes.ts:9:36:
+      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/home/home.component"
+
+    src/app/app.routes.ts:13:36:
+      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
+
+    src/app/app.routes.ts:17:36:
+      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
+
+    src/app/app.routes.ts:21:36:
+      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.396 seconds]
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:9:15:
+      9 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.090 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.015 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.014 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.011 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.014 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.014 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.012 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.012 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:13:
+      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:17:13:
+      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:22:13:
+      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:27:13:
+      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

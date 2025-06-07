@@ -1,0 +1,39 @@
+<div class="planner-page">
+  <div class="planner-container">
+    <h2>Plan Your Perfect Weekend</h2>
+    <form class="planner-form" (submit)="onPlan(); $event.preventDefault()" novalidate>
+      <div class="input-row">
+        <label>Travel Distance</label>
+        <select [(ngModel)]="distance" name="distance" required>
+          <option value="" disabled selected>Select distance</option>
+          <option value="short">Up to 50km</option>
+          <option value="medium">50-200km</option>
+          <option value="long">200km+</option>
+        </select>
+      </div>
+      <div class="input-row">
+        <label>Mood</label>
+        <select [(ngModel)]="mood" name="mood" required>
+          <option value="" disabled selected>Select mood</option>
+          <option value="relaxing">Relaxing</option>
+          <option value="adventurous">Adventurous</option>
+          <option value="cultural">Cultural</option>
+        </select>
+      </div>
+      <div class="input-row">
+        <label>Budget</label>
+        <select [(ngModel)]="budget" name="budget" required>
+          <option value="" disabled selected>Select budget</option>
+          <option value="low">Under $200</option>
+          <option value="medium">$200-$600</option>
+          <option value="high">$600+</option>
+        </select>
+      </div>
+      <button class="planner-btn" type="submit">Find Trips</button>
+    </form>
+    <div class="suggestions-section">
+      <!-- The AI Suggestions component will be shown below, or yield a module route outlet here in future -->
+      <a routerLink="/ai-suggestions" class="go-ai-btn">See AI Suggestions</a>
+    </div>
+  </div>
+</div>

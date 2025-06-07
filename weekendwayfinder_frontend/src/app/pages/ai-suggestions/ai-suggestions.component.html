@@ -1,0 +1,14 @@
+<div class="suggestions-page">
+  <h2>AI-Powered Trip Ideas</h2>
+  <div class="suggestions-grid">
+    <div *ngFor="let trip of trips" class="trip-card">
+      <h3>{{ trip.title }}</h3>
+      <p class="desc">{{ trip.desc }}</p>
+      <div class="meta">
+        <span class="pill mood">{{ trip.mood }}</span>
+        <span class="pill budget">{{ trip.budget }}</span>
+        <span class="pill distance">{{ trip.distance }}</span>
+      </div>
+    </div>
+  </div>
+</div>
