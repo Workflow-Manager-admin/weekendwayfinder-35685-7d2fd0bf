@@ -9,13 +9,18 @@
   justify-content: center;
   height: 100vh;
   position: relative;
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  /* New visually engaging, welcoming travel background */
+  background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
 }
 
 .backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(45, 95, 93, 0.7);
+  /* Strong, warm overlay for readability but lets the scenic image show through */
+  background: linear-gradient(
+    rgba(45, 95, 93, 0.62) 0%, 
+    rgba(247, 200, 115, 0.15) 100%
+  ), rgba(45, 95, 93, 0.50); /* multi-tone overlay for travel feel */
   z-index: 0;
 }
 

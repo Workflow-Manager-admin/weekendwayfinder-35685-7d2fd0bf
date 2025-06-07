@@ -8,8 +8,24 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #F7C87322 60%, #2D5F5D22);
+  /* Add travel/planning themed lively background image */
+  background: url('https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  position: relative;
   padding: 2rem 0;
+  overflow: hidden;
+}
+.planner-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Responsive colored overlay for readability and vibrance */
+  background: linear-gradient(
+    rgba(247, 200, 115, 0.52) 0%, 
+    rgba(45, 95, 93, 0.32) 65%,
+    rgba(242, 92, 84, 0.20) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
 }
 
 .planner-container {
@@ -20,6 +36,8 @@
   padding: 2.3rem 2rem 1rem 2rem;
   width: 100%;
   animation: popin 0.5s;
+  position: relative;
+  z-index: 1; /* Ensure content is above background/overlay */
 }
 
 @keyframes popin {
