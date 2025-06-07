@@ -4,31 +4,53 @@
     <form class="planner-form" (submit)="onPlan(); $event.preventDefault()" novalidate>
       <div class="input-row">
         <label>Travel Distance</label>
-        <select [(ngModel)]="distance" name="distance" required>
+        <select
+          [(ngModel)]="distance"
+          name="distance"
+          required
+          [ngClass]="{'invalid': getFieldError('distance')}"
+          (blur)="onBlur('distance')"
+        >
           <option value="" disabled selected>Select distance</option>
           <option value="short">Up to 50km</option>
           <option value="medium">50-200km</option>
           <option value="long">200km+</option>
         </select>
+        <div class="error-message">{{ getFieldError('distance') }}</div>
       </div>
       <div class="input-row">
         <label>Mood</label>
-        <select [(ngModel)]="mood" name="mood" required>
+        <select
+          [(ngModel)]="mood"
+          name="mood"
+          required
+          [ngClass]="{'invalid': getFieldError('mood')}"
+          (blur)="onBlur('mood')"
+        >
           <option value="" disabled selected>Select mood</option>
           <option value="relaxing">Relaxing</option>
           <option value="adventurous">Adventurous</option>
           <option value="cultural">Cultural</option>
         </select>
+        <div class="error-message">{{ getFieldError('mood') }}</div>
       </div>
       <div class="input-row">
         <label>Budget</label>
-        <select [(ngModel)]="budget" name="budget" required>
+        <select
+          [(ngModel)]="budget"
+          name="budget"
+          required
+          [ngClass]="{'invalid': getFieldError('budget')}"
+          (blur)="onBlur('budget')"
+        >
           <option value="" disabled selected>Select budget</option>
           <option value="low">Under $200</option>
           <option value="medium">$200-$600</option>
           <option value="high">$600+</option>
         </select>
+        <div class="error-message">{{ getFieldError('budget') }}</div>
       </div>
+      <div *ngIf="error" class="error-message">{{ error }}</div>
       <button class="planner-btn" type="submit">Find Trips</button>
     </form>
     <div class="suggestions-section">

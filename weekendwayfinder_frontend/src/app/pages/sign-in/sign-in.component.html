@@ -12,7 +12,12 @@
           name="email"
           required
           autocomplete="username"
+          [ngClass]="{'invalid': getFieldError('email')}"
+          (blur)="onBlur('email')"
         />
+        <div class="error-message">
+          {{ getFieldError('email') }}
+        </div>
       </div>
       <div>
         <label for="password">Password</label>
@@ -23,10 +28,21 @@
           name="password"
           required
           autocomplete="current-password"
+          [ngClass]="{'invalid': getFieldError('password')}"
+          (blur)="onBlur('password')"
         />
+        <div class="error-message">
+          {{ getFieldError('password') }}
+        </div>
       </div>
       <div *ngIf="error" class="error-message">{{ error }}</div>
-      <button type="submit" class="sign-in-btn">Sign In</button>
+      <button
+        type="submit"
+        class="sign-in-btn"
+        [disabled]="submitting"
+      >
+        {{ submitting ? 'Signing In...' : 'Sign In' }}
+      </button>
     </form>
   </div>
 </div>

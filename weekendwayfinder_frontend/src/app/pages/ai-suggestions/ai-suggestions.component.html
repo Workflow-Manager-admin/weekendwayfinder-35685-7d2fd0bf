@@ -5,9 +5,24 @@
       <h3>{{ trip.title }}</h3>
       <p class="desc">{{ trip.desc }}</p>
       <div class="meta">
-        <span class="pill mood">{{ trip.mood }}</span>
-        <span class="pill budget">{{ trip.budget }}</span>
-        <span class="pill distance">{{ trip.distance }}</span>
+        <span class="pill mood">{{ trip.mood | titlecase }}</span>
+        <span class="pill budget" [ngClass]="{
+            'budget': trip.budget==='high' || trip.budget==='medium',
+            '': trip.budget==='low'
+          }">
+          {{
+            trip.budget === 'low' ? 'Budget' :
+            trip.budget === 'medium' ? '$$' :
+            trip.budget === 'high' ? '$$$' : trip.budget
+          }}
+        </span>
+        <span class="pill distance">
+          {{
+            trip.distance === 'short' ? 'Up to 50km' :
+            trip.distance === 'medium' ? '50-200km' :
+            trip.distance === 'long' ? '200km+' : trip.distance
+          }}
+        </span>
       </div>
     </div>
   </div>

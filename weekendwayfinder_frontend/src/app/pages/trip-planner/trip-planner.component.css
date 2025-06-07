@@ -68,6 +68,11 @@ select:focus {
   border: 1.5px solid #F25C54;
 }
 
+select.invalid {
+  border: 1.5px solid #F25C54;
+  background: #fff8f7;
+}
+
 .planner-btn {
   margin-top: 0.6rem;
   padding: 0.7rem 0;

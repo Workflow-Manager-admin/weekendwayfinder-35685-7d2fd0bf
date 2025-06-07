@@ -75,6 +75,11 @@ input:focus {
   border: 1.5px solid #F25C54;
 }
 
+input.invalid {
+  border: 1.5px solid #F25C54;
+  background: #fff8f7;
+}
+
 .sign-in-btn {
   padding: 0.8rem 0;
   background-color: #F25C54;

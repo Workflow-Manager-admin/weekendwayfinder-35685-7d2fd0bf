@@ -7,501 +7,455 @@ The "disableHostCheck" option will not be used because it is not supported by th
 ❯ Building...
 ✔ Building...
 Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  22.59 kB | 
-styles.css           | styles           |  95 bytes | 
+Initial chunk files  | Names                    |  Raw size
+polyfills.js         | polyfills                |  90.20 kB | 
+main.js              | main                     |   2.59 kB | 
+chunk-YQOESBWP.js    | -                        | 754 bytes | 
+styles.css           | styles                   | 723 bytes | 
 
-                     | Initial total    | 112.88 kB
+                     | Initial total            |  94.27 kB
+
+Lazy chunk files     | Names                    |  Raw size
+chunk-I55NRRAP.js    | trip-planner-component   |   8.52 kB | 
+chunk-QW6R26DA.js    | sign-in-component        |   6.64 kB | 
+chunk-PPSOLITZ.js    | ai-suggestions-component |   5.24 kB | 
+chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
 
 
 Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
+Initial chunk files  | Names                    |  Raw size
+polyfills.server.mjs | polyfills.server         | 572.91 kB | 
+chunk-HBXXS6AW.mjs   | -                        |   3.03 kB | 
+server.mjs           | server                   |   1.42 kB | 
+main.server.mjs      | main.server              | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
 
-Application bundle generation complete. [2.781 seconds]
+Lazy chunk files     | Names                    |  Raw size
+chunk-5YMGDZZR.mjs   | trip-planner-component   |   8.55 kB | 
+chunk-ARMFB65V.mjs   | sign-in-component        |   6.67 kB | 
+chunk-LSP2YAT2.mjs   | ai-suggestions-component |   5.27 kB | 
+chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
+
+Application bundle generation complete. [2.991 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
+3:24:35 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+3:24:35 PM [vite] (ssr) Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.378 seconds]
+Application bundle generation failed. [0.963 seconds]
 
-✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:9:36:
-      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
-        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/home/home.component"
-
-    src/app/app.routes.ts:13:36:
-      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
-
-    src/app/app.routes.ts:17:36:
-      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
-
-    src/app/app.routes.ts:21:36:
-      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
-
-    src/app/app.routes.ts:9:36:
-      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
-        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/home/home.component"
-
-    src/app/app.routes.ts:13:36:
-      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
-
-    src/app/app.routes.ts:17:36:
-      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
-
-    src/app/app.routes.ts:21:36:
-      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.007 seconds]
+Application bundle generation failed. [0.234 seconds]
 
-✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:9:36:
-      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
-        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/home/home.component"
-
-    src/app/app.routes.ts:13:36:
-      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
-
-    src/app/app.routes.ts:17:36:
-      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
-
-    src/app/app.routes.ts:21:36:
-      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/sign-in/sign-in.component"
-
-    src/app/app.routes.ts:9:36:
-      9 │ ...: () => import('./pages/sign-in/sign-in.component').then(m => m....
-        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/home/home.component"
-
-    src/app/app.routes.ts:13:36:
-      13 │ ...nt: () => import('./pages/home/home.component').then(m => m.Hom...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/trip-planner/trip-planner.component"
-
-    src/app/app.routes.ts:17:36:
-      17 │ ...=> import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./pages/ai-suggestions/ai-suggestions.component"
-
-    src/app/app.routes.ts:21:36:
-      21 │ ...=> import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.396 seconds]
+Application bundle generation failed. [0.243 seconds]
 
-✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.component.html:228:20:
-      228 │       <h1>Hello, {{ title }}</h1>
-          ╵                     ~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:9:15:
-      9 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.090 seconds]
+Application bundle generation failed. [0.405 seconds]
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.015 seconds]
+Application bundle generation failed. [0.243 seconds]
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.014 seconds]
+Application bundle generation failed. [0.327 seconds]
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.011 seconds]
+Application bundle generation failed. [0.374 seconds]
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.014 seconds]
+Application bundle generation failed. [0.212 seconds]
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] TS1517: Range out of order in character class. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:47:30:
+      47 │       const emailRegex = /^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$/i;
+         ╵                               ~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.014 seconds]
+Browser bundles     
+Initial chunk files  | Names                    |  Raw size
+polyfills.js         | polyfills                |  90.20 kB | 
+main.js              | main                     |   2.59 kB | 
+chunk-YQOESBWP.js    | -                        | 754 bytes | 
+styles.css           | styles                   | 723 bytes | 
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+                     | Initial total            |  94.27 kB
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lazy chunk files     | Names                    |  Raw size
+chunk-UD7LYLVP.js    | trip-planner-component   |  12.42 kB | 
+chunk-BJPKBPG2.js    | sign-in-component        |   9.62 kB | 
+chunk-BJLVRC7D.js    | ai-suggestions-component |   7.99 kB | 
+chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
 
 
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+Server bundles      
+Initial chunk files  | Names                    |  Raw size
+polyfills.server.mjs | polyfills.server         | 572.91 kB | 
+chunk-WGITCIBK.mjs   | -                        |   3.03 kB | 
+server.mjs           | server                   |   1.42 kB | 
+main.server.mjs      | main.server              | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
 
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lazy chunk files     | Names                    |  Raw size
+chunk-7N2TMWN2.mjs   | trip-planner-component   |  12.45 kB | 
+chunk-AIT5ND32.mjs   | sign-in-component        |   9.65 kB | 
+chunk-PX5C2U7T.mjs   | ai-suggestions-component |   8.03 kB | 
+chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
+
+Application bundle generation complete. [0.412 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   2.59 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-TCEQJWIE.js   | trip-planner-component |  12.28 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-QK2Q3XOI.mjs  | -                      |   3.03 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-S6OTE6DV.mjs  | trip-planner-component |  12.31 kB | 
+
+Application bundle generation complete. [0.440 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                    |  Raw size
+main.js             | main                     |   2.59 kB | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-VE3VLI2F.js   | ai-suggestions-component |   6.76 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                    |  Raw size
+chunk-4XKQWIXS.mjs  | -                        |   3.03 kB | 
+server.mjs          | server                   |   1.42 kB | 
+main.server.mjs     | main.server              | 831 bytes | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-BTFS2HB5.mjs  | ai-suggestions-component |   6.80 kB | 
+
+Application bundle generation complete. [0.268 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   2.59 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-LD5FS5II.js   | sign-in-component |   9.71 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+chunk-OZRKNR3G.mjs  | -                 |   3.03 kB | 
+server.mjs          | server            |   1.42 kB | 
+main.server.mjs     | main.server       | 831 bytes | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-J4KS7NIE.mjs  | sign-in-component |   9.74 kB | 
+
+Application bundle generation complete. [0.387 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   2.59 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-CZ6KGR7B.js   | trip-planner-component |  12.42 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-Y2MK6DMC.mjs  | -                      |   3.03 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-5R46NZO2.mjs  | trip-planner-component |  12.45 kB | 
+
+Application bundle generation complete. [0.363 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.240 seconds]
+
+✘ [ERROR] TS-992003: No suitable injection token for parameter 'router' of class 'SignInComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+
+    src/app/pages/sign-in/sign-in.component.ts:25:22:
+      25 │   constructor(private router: Router) {}
+         ╵                       ~~~~~~
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/pages/sign-in/sign-in.component.ts:25:30:
+      25 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'Router'. [plugin angular-compiler]
+
+    src/app/pages/sign-in/sign-in.component.ts:25:30:
+      25 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.012 seconds]
+Application bundle generation failed. [0.241 seconds]
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'router' does not exist on type 'SignInComponent'. [plugin angular-compiler]
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/sign-in/sign-in.component.ts:87:11:
+      87 │       this.router.navigate(['/home']);
+         ╵            ~~~~~~
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.012 seconds]
+Browser bundles     
+Initial chunk files  | Names                    |  Raw size
+polyfills.js         | polyfills                |  90.20 kB | 
+main.js              | main                     |   2.59 kB | 
+chunk-YQOESBWP.js    | -                        | 754 bytes | 
+styles.css           | styles                   | 723 bytes | 
 
-✘ [ERROR] TS2307: Cannot find module './pages/sign-in/sign-in.component' or its corresponding type declarations. [plugin angular-compiler]
+                     | Initial total            |  94.27 kB
 
-    src/app/app.routes.ts:12:13:
-      12 │       import('./pages/sign-in/sign-in.component').then(m => m.Sign...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:17:13:
-      17 │       import('./pages/home/home.component').then(m => m.HomeCompon...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './pages/trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:22:13:
-      22 │       import('./pages/trip-planner/trip-planner.component').then(m...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lazy chunk files     | Names                    |  Raw size
+chunk-CZ6KGR7B.js    | trip-planner-component   |  12.42 kB | 
+chunk-UUY656M4.js    | sign-in-component        |   9.60 kB | 
+chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
+chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
 
 
-✘ [ERROR] TS2307: Cannot find module './pages/ai-suggestions/ai-suggestions.component' or its corresponding type declarations. [plugin angular-compiler]
+Server bundles      
+Initial chunk files  | Names                    |  Raw size
+polyfills.server.mjs | polyfills.server         | 572.91 kB | 
+chunk-2D44SHOA.mjs   | -                        |   3.03 kB | 
+server.mjs           | server                   |   1.42 kB | 
+main.server.mjs      | main.server              | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
 
-    src/app/app.routes.ts:27:13:
-      27 │       import('./pages/ai-suggestions/ai-suggestions.component').th...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lazy chunk files     | Names                    |  Raw size
+chunk-5R46NZO2.mjs   | trip-planner-component   |  12.45 kB | 
+chunk-QFEMAHDI.mjs   | sign-in-component        |   9.63 kB | 
+chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
+chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
+
+Application bundle generation complete. [0.165 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.181 seconds]
+
+✘ [ERROR] TS-992003: No suitable injection token for parameter 'router' of class 'TripPlannerComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:22:
+      28 │   constructor(private router: Router) {}
+         ╵                       ~~~~~~
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:30:
+      28 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
 
 
+✘ [ERROR] TS2304: Cannot find name 'Router'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:30:
+      28 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.114 seconds]
+
+✘ [ERROR] TS-992003: No suitable injection token for parameter 'router' of class 'TripPlannerComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:22:
+      28 │   constructor(private router: Router) {}
+         ╵                       ~~~~~~
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:30:
+      28 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'Router'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:30:
+      28 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.255 seconds]
+
+✘ [ERROR] TS-992003: No suitable injection token for parameter 'router' of class 'TripPlannerComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:22:
+      28 │   constructor(private router: Router) {}
+         ╵                       ~~~~~~
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:30:
+      28 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
+
+
+✘ [ERROR] TS2304: Cannot find name 'Router'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:28:30:
+      28 │   constructor(private router: Router) {}
+         ╵                               ~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                    |  Raw size
+polyfills.js         | polyfills                |  90.20 kB | 
+main.js              | main                     |   2.59 kB | 
+chunk-YQOESBWP.js    | -                        | 754 bytes | 
+styles.css           | styles                   | 723 bytes | 
+
+                     | Initial total            |  94.27 kB
+
+Lazy chunk files     | Names                    |  Raw size
+chunk-NCNCGQ3Z.js    | trip-planner-component   |  12.28 kB | 
+chunk-VZD6ICKL.js    | sign-in-component        |   9.71 kB | 
+chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
+chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                    |  Raw size
+polyfills.server.mjs | polyfills.server         | 572.91 kB | 
+chunk-OGSBRNGW.mjs   | -                        |   3.03 kB | 
+server.mjs           | server                   |   1.42 kB | 
+main.server.mjs      | main.server              | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
+
+Lazy chunk files     | Names                    |  Raw size
+chunk-24KRE27A.mjs   | trip-planner-component   |  12.31 kB | 
+chunk-XWQSSZTW.mjs   | sign-in-component        |   9.74 kB | 
+chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
+chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
+
+Application bundle generation complete. [0.343 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   2.59 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-JFFS5LZL.js   | sign-in-component |   9.72 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+chunk-NF4QTMI2.mjs  | -                 |   3.03 kB | 
+server.mjs          | server            |   1.42 kB | 
+main.server.mjs     | main.server       | 831 bytes | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-J4GEQEGU.mjs  | sign-in-component |   9.76 kB | 
+
+Application bundle generation complete. [0.221 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
