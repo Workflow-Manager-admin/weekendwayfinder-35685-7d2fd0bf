@@ -1,0 +1,73 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary, #F7C873);
+  padding: 0.1rem 2.2rem 0.1rem 1.3rem;
+  box-shadow: 0 2px 8px #2D5F5D0e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.35rem;
+  color: var(--primary, #2D5F5D);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.nav-links li {
+  display: flex;
+}
+
+.nav-links a {
+  display: inline-block;
+  color: var(--primary, #2D5F5D);
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1.04rem;
+  text-decoration: none;
+  padding: 0.35rem 1.18rem;
+  border-radius: 1.3rem;
+  transition: background 0.16s, color 0.16s;
+}
+
+.nav-links a:hover, 
+.nav-links .active-link {
+  background: var(--accent, #F25C54);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .header-nav {
+    padding: 0.1rem 0.6rem 0.1rem 0.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.2rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    justify-content: flex-start;
+  }
+  .header-logo {
+    text-align: left;
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+  }
+  .nav-links a {
+    padding: 0.28rem 0.85rem;
+    font-size: 0.96rem;
+  }
+}

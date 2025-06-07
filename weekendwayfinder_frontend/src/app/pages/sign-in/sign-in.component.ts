@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -23,9 +23,7 @@ export class SignInComponent {
   touched: { email: boolean, password: boolean } = { email: false, password: false };
   submitting: boolean = false;
 
-  // Note: No property assignment for router
 
-  constructor(router: Router) {}
 
   /**
    * Handler for input blur, used to show validations only after input is touched.
@@ -46,7 +44,7 @@ export class SignInComponent {
       if (!this.email && this.touched.email) return 'Email is required.';
       // PUBLIC_INTERFACE
       // Simple email regex just for demo, NOT for real prod use!
-      const emailRegex = /^[\w.-]+@[\w-]+\.[a-z]{2,}$/i;
+      const emailRegex = /^[\w.-]+@[\\w-]+\\.[a-z]{2,}$/i;
       if (this.email && !emailRegex.test(this.email)) return 'Enter a valid email.';
     } else if (field === 'password') {
       if (!this.password && this.touched.password) return 'Password is required.';
@@ -84,10 +82,11 @@ export class SignInComponent {
     }
     this.submitting = true;
     // Simulate a network/auth delay - prod: call auth API here!
-    window.setTimeout(() => {
+    // eslint-disable-next-line no-undef
+    setTimeout(() => {
       this.submitting = false;
-      // Using window.location for navigation to /home to match the Router call.
-      window.location.href = '/home';
+      const router = inject(Router);
+      router.navigate(['/home']);
     }, 650);
   }
 }

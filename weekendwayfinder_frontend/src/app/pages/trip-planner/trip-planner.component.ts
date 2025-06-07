@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -23,10 +23,6 @@ export class TripPlannerComponent {
     distance: false, mood: false, budget: false
   };
   error: string = '';
-
-  // No property assignment for router
-
-  constructor(router: Router) {}
 
   /**
    * Handler for blur events to set validation touch flag.
@@ -79,9 +75,11 @@ export class TripPlannerComponent {
       return;
     }
     // In future, could pass state to AI component or as route params/query!
-    window.setTimeout(() => {
+    // eslint-disable-next-line no-undef
+    setTimeout(() => {
       // Route to AI Suggestions page (SSR-safe)
-      window.location.href = '/ai-suggestions';
+      const router = inject(Router);
+      router.navigate(['/ai-suggestions']);
     }, 500);
   }
 }
