@@ -16,8 +16,8 @@ styles.css           | styles                   | 723 bytes |
                      | Initial total            |  98.33 kB
 
 Lazy chunk files     | Names                    |  Raw size
-chunk-YZZ7ZP5L.js    | trip-planner-component   |  12.22 kB | 
-chunk-ILNY5MWO.js    | sign-in-component        |   9.78 kB | 
+chunk-I6T3BTUT.js    | trip-planner-component   |  17.15 kB | 
+chunk-KEWXAXNF.js    | sign-in-component        |   9.92 kB | 
 chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
 chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
 
@@ -25,18 +25,18 @@ chunk-2YSV2GMC.js    | home-component           |   3.38 kB |
 Server bundles      
 Initial chunk files  | Names                    |  Raw size
 polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-XJBEPBFR.mjs   | -                        |   7.09 kB | 
+chunk-GZYUJVJF.mjs   | -                        |   7.09 kB | 
 server.mjs           | server                   |   1.42 kB | 
 main.server.mjs      | main.server              | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
 
 Lazy chunk files     | Names                    |  Raw size
-chunk-ZZV2WCPZ.mjs   | trip-planner-component   |  12.25 kB | 
-chunk-2Y5VDC6Q.mjs   | sign-in-component        |   9.82 kB | 
+chunk-LJ2PWU7N.mjs   | trip-planner-component   |  17.18 kB | 
+chunk-NYY2LAG3.mjs   | sign-in-component        |   9.96 kB | 
 chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
 chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
 
-Application bundle generation complete. [2.590 seconds]
+Application bundle generation complete. [3.289 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -44,216 +44,24 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.591 seconds]
-
-✘ [ERROR] TS2304: Cannot find name 'inject'. [plugin angular-compiler]
-
-    src/app/pages/sign-in/sign-in.component.ts:83:21:
-      83 │       const router = inject(Router);
-         ╵                      ~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                    |  Raw size
-polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   6.65 kB | 
-chunk-YQOESBWP.js    | -                        | 754 bytes | 
-styles.css           | styles                   | 723 bytes | 
-
-                     | Initial total            |  98.33 kB
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-YZZ7ZP5L.js    | trip-planner-component   |  12.22 kB | 
-chunk-ZLIB6EFN.js    | sign-in-component        |   9.91 kB | 
-chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
-chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                    |  Raw size
-polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-ULIVWT5X.mjs   | -                        |   7.09 kB | 
-server.mjs           | server                   |   1.42 kB | 
-main.server.mjs      | main.server              | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-ZZV2WCPZ.mjs   | trip-planner-component   |  12.25 kB | 
-chunk-BMJL5NB4.mjs   | sign-in-component        |   9.94 kB | 
-chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
-chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
-
-Application bundle generation complete. [0.412 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                    |  Raw size
-polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   6.65 kB | 
-chunk-YQOESBWP.js    | -                        | 754 bytes | 
-styles.css           | styles                   | 723 bytes | 
-
-                     | Initial total            |  98.33 kB
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-YZZ7ZP5L.js    | trip-planner-component   |  12.22 kB | 
-chunk-ZLIB6EFN.js    | sign-in-component        |   9.91 kB | 
-chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
-chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                    |  Raw size
-polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-ULIVWT5X.mjs   | -                        |   7.09 kB | 
-server.mjs           | server                   |   1.42 kB | 
-main.server.mjs      | main.server              | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-ZZV2WCPZ.mjs   | trip-planner-component   |  12.25 kB | 
-chunk-BMJL5NB4.mjs   | sign-in-component        |   9.94 kB | 
-chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
-chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
-
-Application bundle generation complete. [0.204 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   6.65 kB | 
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   6.65 kB | 
 
-Lazy chunk files    | Names             |  Raw size
-chunk-Z7F3J6XN.js   | sign-in-component |   9.91 kB | 
+Lazy chunk files    | Names                  |  Raw size
+chunk-GNDF5CQ7.js   | trip-planner-component |  18.44 kB | 
 
 
 Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-K7RH37JA.mjs  | -                 |   7.09 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
+Initial chunk files | Names                  |  Raw size
+chunk-LIBKSEEB.mjs  | -                      |   7.09 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
 
-Lazy chunk files    | Names             |  Raw size
-chunk-OIHT4LDB.mjs  | sign-in-component |   9.94 kB | 
+Lazy chunk files    | Names                  |  Raw size
+chunk-757UXHIV.mjs  | trip-planner-component |  18.48 kB | 
 
-Application bundle generation complete. [0.283 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   6.65 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-ALVBVXDL.js   | sign-in-component |   9.85 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-OWGVCDCZ.mjs  | -                 |   7.09 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-JFUAN5VJ.mjs  | sign-in-component |   9.89 kB | 
-
-Application bundle generation complete. [0.387 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   6.65 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-55BIMRNE.js   | sign-in-component |   9.88 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-LGJDZGMQ.mjs  | -                 |   7.09 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-45S74OKU.mjs  | sign-in-component |   9.91 kB | 
-
-Application bundle generation complete. [0.222 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   6.65 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-KEWXAXNF.js   | sign-in-component |   9.92 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-WXN7CUKO.mjs  | -                 |   7.09 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-NYY2LAG3.mjs  | sign-in-component |   9.96 kB | 
-
-Application bundle generation complete. [0.236 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.312 seconds]
-
-✘ [ERROR] TS2304: Cannot find name 'inject'. [plugin angular-compiler]
-
-    src/app/pages/trip-planner/trip-planner.component.ts:81:21:
-      81 │       const router = inject(Router);
-         ╵                      ~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                    |  Raw size
-polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   6.65 kB | 
-chunk-YQOESBWP.js    | -                        | 754 bytes | 
-styles.css           | styles                   | 723 bytes | 
-
-                     | Initial total            |  98.33 kB
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-VEVFLWEW.js    | trip-planner-component   |  12.28 kB | 
-chunk-KEWXAXNF.js    | sign-in-component        |   9.92 kB | 
-chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
-chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                    |  Raw size
-polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-MLF7737W.mjs   | -                        |   7.09 kB | 
-server.mjs           | server                   |   1.42 kB | 
-main.server.mjs      | main.server              | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-T7LBTQCH.mjs   | trip-planner-component   |  12.31 kB | 
-chunk-NYY2LAG3.mjs   | sign-in-component        |   9.96 kB | 
-chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
-chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
-
-Application bundle generation complete. [0.300 seconds]
+Application bundle generation complete. [0.774 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -263,19 +71,19 @@ Initial chunk files | Names                  |  Raw size
 main.js             | main                   |   6.65 kB | 
 
 Lazy chunk files    | Names                  |  Raw size
-chunk-JB4ODK37.js   | trip-planner-component |  12.31 kB | 
+chunk-7QIWSLNQ.js   | trip-planner-component |  19.39 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                  |  Raw size
-chunk-GXTEFJJ6.mjs  | -                      |   7.09 kB | 
+chunk-XAH2BXTV.mjs  | -                      |   7.09 kB | 
 server.mjs          | server                 |   1.42 kB | 
 main.server.mjs     | main.server            | 831 bytes | 
 
 Lazy chunk files    | Names                  |  Raw size
-chunk-BH7PCU6U.mjs  | trip-planner-component |  12.35 kB | 
+chunk-57BJPEMY.mjs  | trip-planner-component |  19.42 kB | 
 
-Application bundle generation complete. [0.256 seconds]
+Application bundle generation complete. [0.485 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -285,187 +93,19 @@ Initial chunk files | Names                  |  Raw size
 main.js             | main                   |   6.65 kB | 
 
 Lazy chunk files    | Names                  |  Raw size
-chunk-GDFE4KZI.js   | trip-planner-component |  12.31 kB | 
+chunk-7GP3Q6QP.js   | trip-planner-component |  19.24 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                  |  Raw size
-chunk-TNWMI4XI.mjs  | -                      |   7.09 kB | 
+chunk-GJBTRAMV.mjs  | -                      |   7.09 kB | 
 server.mjs          | server                 |   1.42 kB | 
 main.server.mjs     | main.server            | 831 bytes | 
 
 Lazy chunk files    | Names                  |  Raw size
-chunk-3QTIQ3LD.mjs  | trip-planner-component |  12.35 kB | 
+chunk-SM3KNJZE.mjs  | trip-planner-component |  19.28 kB | 
 
-Application bundle generation complete. [0.364 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-BY6SSQHU.js   | trip-planner-component |  12.26 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-ZAQQ77OW.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-N2OQP23I.mjs  | trip-planner-component |  12.30 kB | 
-
-Application bundle generation complete. [0.193 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                    |  Raw size
-polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   6.65 kB | 
-chunk-YQOESBWP.js    | -                        | 754 bytes | 
-styles.css           | styles                   | 723 bytes | 
-
-                     | Initial total            |  98.33 kB
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-BY6SSQHU.js    | trip-planner-component   |  12.26 kB | 
-chunk-KEWXAXNF.js    | sign-in-component        |   9.92 kB | 
-chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
-chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                    |  Raw size
-polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-ZAQQ77OW.mjs   | -                        |   7.09 kB | 
-server.mjs           | server                   |   1.42 kB | 
-main.server.mjs      | main.server              | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-N2OQP23I.mjs   | trip-planner-component   |  12.30 kB | 
-chunk-NYY2LAG3.mjs   | sign-in-component        |   9.96 kB | 
-chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
-chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
-
-Application bundle generation complete. [0.273 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-TZSSRP6S.js   | trip-planner-component |  12.27 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-ZPJQFPS7.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-UHXGFTX4.mjs  | trip-planner-component |  12.30 kB | 
-
-Application bundle generation complete. [0.278 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-BY6SSQHU.js   | trip-planner-component |  12.26 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-ZAQQ77OW.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-N2OQP23I.mjs  | trip-planner-component |  12.30 kB | 
-
-Application bundle generation complete. [0.322 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.298 seconds]
-
-✘ [ERROR] TS2339: Property 'router' does not exist on type 'TripPlannerComponent'. [plugin angular-compiler]
-
-    src/app/pages/trip-planner/trip-planner.component.ts:81:11:
-      81 │       this.router.navigate(['/ai-suggestions']);
-         ╵            ~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                    |  Raw size
-polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   6.65 kB | 
-chunk-MBAFJDP5.js    | -                        |   1.13 kB | 
-styles.css           | styles                   | 723 bytes | 
-
-                     | Initial total            |  98.70 kB
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-WJO2GZ33.js    | trip-planner-component   |  12.22 kB | 
-chunk-VO665KLD.js    | sign-in-component        |   9.92 kB | 
-chunk-QHPOMXGD.js    | ai-suggestions-component |   6.76 kB | 
-chunk-ZZVAXNZE.js    | home-component           |   3.38 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                    |  Raw size
-polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-B2MR75L5.mjs   | -                        |   7.09 kB | 
-server.mjs           | server                   |   1.42 kB | 
-chunk-3BBEPZ4A.mjs   | -                        |   1.17 kB | 
-main.server.mjs      | main.server              | 831 bytes | 
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-B2VXGHUQ.mjs   | trip-planner-component   |  12.26 kB | 
-chunk-MZHBOA3G.mjs   | sign-in-component        |   9.96 kB | 
-chunk-XUWSFWZE.mjs   | ai-suggestions-component |   6.80 kB | 
-chunk-5EPRKYJQ.mjs   | home-component           |   3.42 kB | 
-
-Application bundle generation complete. [0.227 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-RGI2CNAY.js   | trip-planner-component |  12.22 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-XES6FJR5.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-FNT3AAGE.mjs  | trip-planner-component |  12.26 kB | 
-
-Application bundle generation complete. [0.410 seconds]
+Application bundle generation complete. [0.477 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -473,161 +113,42 @@ Page reload sent to client(s).
 Browser bundles    
 Initial chunk files | Names                    |  Raw size
 main.js             | main                     |   6.65 kB | 
-chunk-YQOESBWP.js   | -                        | 754 bytes | 
 
 Lazy chunk files    | Names                    |  Raw size
-chunk-LCGLQRZK.js   | trip-planner-component   |  12.10 kB | 
-chunk-KEWXAXNF.js   | sign-in-component        |   9.92 kB | 
-chunk-VE3VLI2F.js   | ai-suggestions-component |   6.76 kB | 
-chunk-2YSV2GMC.js   | home-component           |   3.38 kB | 
+chunk-B3Q6DF7Y.js   | ai-suggestions-component |   7.71 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                    |  Raw size
-chunk-2PTFIG7Y.mjs  | -                        |   7.09 kB | 
+chunk-22QYQHD5.mjs  | -                        |   7.09 kB | 
 server.mjs          | server                   |   1.42 kB | 
 main.server.mjs     | main.server              | 831 bytes | 
-chunk-FFILDKJJ.mjs  | -                        | 788 bytes | 
 
 Lazy chunk files    | Names                    |  Raw size
-chunk-S4P4KMRN.mjs  | trip-planner-component   |  12.14 kB | 
-chunk-NYY2LAG3.mjs  | sign-in-component        |   9.96 kB | 
-chunk-BTFS2HB5.mjs  | ai-suggestions-component |   6.80 kB | 
-chunk-DJ27HPD6.mjs  | home-component           |   3.42 kB | 
+chunk-EL4ZAQQZ.mjs  | ai-suggestions-component |   7.74 kB | 
 
-Application bundle generation complete. [0.224 seconds]
+Application bundle generation complete. [0.429 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
+Initial chunk files | Names                    |  Raw size
+main.js             | main                     |   6.65 kB | 
 
-Lazy chunk files    | Names                  |  Raw size
-chunk-G5N7CWIC.js   | trip-planner-component |  12.10 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-UP6X5ELH.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-B77C566K.mjs  | trip-planner-component |  12.14 kB | 
-
-Application bundle generation complete. [0.337 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.429 seconds]
-
-✘ [ERROR] TS2392: Multiple constructor implementations are not allowed. [plugin angular-compiler]
-
-    src/app/pages/trip-planner/trip-planner.component.ts:26:2:
-      26 │   constructor() {}
-         ╵   ~~~~~~~~~~~
-
-
-✘ [ERROR] Classes cannot contain more than one constructor
-
-    src/app/pages/trip-planner/trip-planner.component.ts:67:4:
-      67 │     constructor(router) {
-         ╵     ~~~~~~~~~~~
-
-
-✘ [ERROR] TS2392: Multiple constructor implementations are not allowed. [plugin angular-compiler]
-
-    src/app/pages/trip-planner/trip-planner.component.ts:69:2:
-      69 │   constructor(private router: Router) {}
-         ╵   ~~~~~~~~~~~
-
-
-✘ [ERROR] Classes cannot contain more than one constructor
-
-    src/app/pages/trip-planner/trip-planner.component.ts:67:4:
-      67 │     constructor(router) {
-         ╵     ~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                    |  Raw size
-polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   6.65 kB | 
-chunk-YQOESBWP.js    | -                        | 754 bytes | 
-styles.css           | styles                   | 723 bytes | 
-
-                     | Initial total            |  98.33 kB
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-PA4MJIYD.js    | trip-planner-component   |  12.28 kB | 
-chunk-KEWXAXNF.js    | sign-in-component        |   9.92 kB | 
-chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
-chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                    |  Raw size
-polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-XT6A6FES.mjs   | -                        |   7.09 kB | 
-server.mjs           | server                   |   1.42 kB | 
-main.server.mjs      | main.server              | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
-
-Lazy chunk files     | Names                    |  Raw size
-chunk-L7DJG5ZT.mjs   | trip-planner-component   |  12.32 kB | 
-chunk-NYY2LAG3.mjs   | sign-in-component        |   9.96 kB | 
-chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
-chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
-
-Application bundle generation complete. [0.968 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-GSKULDP6.js   | trip-planner-component |  13.53 kB | 
+Lazy chunk files    | Names                    |  Raw size
+chunk-QVYFEYB2.js   | ai-suggestions-component |   7.55 kB | 
 
 
 Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-F5JZGCXT.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
+Initial chunk files | Names                    |  Raw size
+chunk-HKZDWVUG.mjs  | -                        |   7.09 kB | 
+server.mjs          | server                   |   1.42 kB | 
+main.server.mjs     | main.server              | 831 bytes | 
 
-Lazy chunk files    | Names                  |  Raw size
-chunk-ENYB4CMT.mjs  | trip-planner-component |  13.56 kB | 
+Lazy chunk files    | Names                    |  Raw size
+chunk-ODPTA43M.mjs  | ai-suggestions-component |   7.59 kB | 
 
-Application bundle generation complete. [0.550 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.65 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-I6T3BTUT.js   | trip-planner-component |  17.15 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-GZYUJVJF.mjs  | -                      |   7.09 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-LJ2PWU7N.mjs  | trip-planner-component |  17.18 kB | 
-
-Application bundle generation complete. [0.316 seconds]
+Application bundle generation complete. [0.202 seconds]
 
 Page reload sent to client(s).

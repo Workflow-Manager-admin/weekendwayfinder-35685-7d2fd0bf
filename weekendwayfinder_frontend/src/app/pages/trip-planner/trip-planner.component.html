@@ -31,6 +31,13 @@
           <option value="relaxing">Relaxing</option>
           <option value="adventurous">Adventurous</option>
           <option value="cultural">Cultural</option>
+          <option value="romantic">Romantic</option>
+          <option value="family">Family</option>
+          <option value="nature">Nature</option>
+          <option value="foodie">Foodie</option>
+          <option value="spiritual">Spiritual</option>
+          <option value="luxury">Luxury</option>
+          <option value="wellness">Wellness</option>
         </select>
         <div class="error-message">{{ getFieldError('mood') }}</div>
       </div>
@@ -44,9 +51,10 @@
           (blur)="onBlur('budget')"
         >
           <option value="" disabled>Select budget</option>
-          <option value="low">Under $200</option>
-          <option value="medium">$200-$600</option>
-          <option value="high">$600+</option>
+          <option value="below2k">Below ₹2,000</option>
+          <option value="2k-5k">₹2,000-₹5,000</option>
+          <option value="5k-10k">₹5,000-₹10,000</option>
+          <option value="above10k">Above ₹10,000</option>
         </select>
         <div class="error-message">{{ getFieldError('budget') }}</div>
       </div>
@@ -64,14 +72,13 @@
             <p class="desc">{{ trip.desc }}</p>
             <div class="meta">
               <span class="pill mood">{{ trip.mood | titlecase }}</span>
-              <span class="pill budget" [ngClass]="{
-                'budget': trip.budget === 'high' || trip.budget === 'medium',
-                '': trip.budget === 'low'
-              }">
+              <span class="pill budget">
                 {{
-                  trip.budget === 'low' ? 'Budget' :
-                  trip.budget === 'medium' ? '$$' :
-                  trip.budget === 'high' ? '$$$' : trip.budget
+                  trip.budget === 'below2k' ? 'Below ₹2,000' :
+                  trip.budget === '2k-5k' ? '₹2,000-₹5,000' :
+                  trip.budget === '5k-10k' ? '₹5,000-₹10,000' :
+                  trip.budget === 'above10k' ? 'Above ₹10,000' :
+                  trip.budget
                 }}
               </span>
               <span class="pill distance">

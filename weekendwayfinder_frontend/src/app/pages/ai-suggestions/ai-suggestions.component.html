@@ -6,14 +6,13 @@
       <p class="desc">{{ trip.desc }}</p>
       <div class="meta">
         <span class="pill mood">{{ trip.mood | titlecase }}</span>
-        <span class="pill budget" [ngClass]="{
-            'budget': trip.budget==='high' || trip.budget==='medium',
-            '': trip.budget==='low'
-          }">
+        <span class="pill budget">
           {{
-            trip.budget === 'low' ? 'Budget' :
-            trip.budget === 'medium' ? '$$' :
-            trip.budget === 'high' ? '$$$' : trip.budget
+            trip.budget === 'below2k' ? 'Below ₹2,000' :
+            trip.budget === '2k-5k' ? '₹2,000-₹5,000' :
+            trip.budget === '5k-10k' ? '₹5,000-₹10,000' :
+            trip.budget === 'above10k' ? 'Above ₹10,000' :
+            trip.budget
           }}
         </span>
         <span class="pill distance">

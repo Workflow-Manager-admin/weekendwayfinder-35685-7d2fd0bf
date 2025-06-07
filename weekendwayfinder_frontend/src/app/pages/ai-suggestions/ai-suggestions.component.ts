@@ -15,49 +15,84 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./ai-suggestions.component.css']
 })
 export class AiSuggestionsComponent {
-  // Full mock trip catalogue (future: fetch from backend)
+  // Full mock trip catalogue (now with new moods and rupee budget types)
   private allTrips = [
     {
       title: 'Quiet Lake Retreat',
       desc: 'Nature, canoeing, cozy cabins, perfect for relaxation.',
       mood: 'relaxing',
-      budget: 'medium',
+      budget: '5k-10k',
       distance: 'medium'
     },
     {
       title: 'Urban Adventure',
       desc: 'Street food, art galleries, walkable city experience.',
       mood: 'adventurous',
-      budget: 'low',
+      budget: 'below2k',
       distance: 'short'
     },
     {
       title: 'Cultural Heritage Trail',
       desc: 'Museums, guided tours, and local cuisine, all weekend.',
       mood: 'cultural',
-      budget: 'high',
+      budget: 'above10k',
       distance: 'long'
     },
     {
       title: 'Forest Camping Expedition',
       desc: 'Campfires, hiking, and stargazing in the wild woods.',
-      mood: 'adventurous',
-      budget: 'medium',
+      mood: 'nature',
+      budget: '2k-5k',
       distance: 'long'
     },
     {
       title: 'Luxury Spa Escape',
       desc: 'Pampering, soothing massages, and delicious meals.',
-      mood: 'relaxing',
-      budget: 'high',
+      mood: 'luxury',
+      budget: 'above10k',
       distance: 'medium'
     },
     {
       title: 'Town Food Crawl',
       desc: 'Try the best bakeries and diners within the city limits.',
-      mood: 'cultural',
-      budget: 'low',
+      mood: 'foodie',
+      budget: 'below2k',
       distance: 'short'
+    },
+    {
+      title: 'Romantic Beach Getaway',
+      desc: 'Private beaches, sunset cruises, candle-lit dinners.',
+      mood: 'romantic',
+      budget: '5k-10k',
+      distance: 'medium'
+    },
+    {
+      title: 'Family Amusement Park',
+      desc: 'Fun rides, shows, family-friendly meals.',
+      mood: 'family',
+      budget: '2k-5k',
+      distance: 'short'
+    },
+    {
+      title: 'Temple & Spiritual Circle',
+      desc: 'Serene temples, meditation and spiritual talks.',
+      mood: 'spiritual',
+      budget: '2k-5k',
+      distance: 'medium'
+    },
+    {
+      title: 'Wellness Yoga Camp',
+      desc: 'Yoga, massages, detox food and mindfulness.',
+      mood: 'wellness',
+      budget: '5k-10k',
+      distance: 'medium'
+    },
+    {
+      title: 'Wildlife Jungle Safari',
+      desc: 'Jeep safari, wildlife spotting, tent camping.',
+      mood: 'adventurous',
+      budget: '5k-10k',
+      distance: 'long'
     }
   ];
 
