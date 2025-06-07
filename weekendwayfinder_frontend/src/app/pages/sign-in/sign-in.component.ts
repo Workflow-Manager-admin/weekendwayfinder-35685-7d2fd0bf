@@ -81,7 +81,7 @@ export class SignInComponent {
     setTimeout(() => {
       this.submitting = false;
       const router = inject(Router);
-      router.navigate(['/home']);
+      router.navigate(['/trip-planner']);
     }, 650);
   }
 }
