@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+
 /**
- * Trip Planner Component. Displays and validates travel preference form,
- * and routes users to AI Suggestions with their selected data.
+ * Trip Planner Component.
+ * Displays travel preference form and, upon submission, shows AI suggestions below the form
+ * based on user preferences while staying on the same page.
  */
 // PUBLIC_INTERFACE
 @Component({
@@ -22,6 +23,57 @@ export class TripPlannerComponent {
     distance: false, mood: false, budget: false
   };
   public error: string = '';
+  public showSuggestions: boolean = false;
+
+  // Mock AI trip data (same as used in AI Suggestions component)
+  private allTrips = [
+    {
+      title: 'Quiet Lake Retreat',
+      desc: 'Nature, canoeing, cozy cabins, perfect for relaxation.',
+      mood: 'relaxing',
+      budget: 'medium',
+      distance: 'medium'
+    },
+    {
+      title: 'Urban Adventure',
+      desc: 'Street food, art galleries, walkable city experience.',
+      mood: 'adventurous',
+      budget: 'low',
+      distance: 'short'
+    },
+    {
+      title: 'Cultural Heritage Trail',
+      desc: 'Museums, guided tours, and local cuisine, all weekend.',
+      mood: 'cultural',
+      budget: 'high',
+      distance: 'long'
+    },
+    {
+      title: 'Forest Camping Expedition',
+      desc: 'Campfires, hiking, and stargazing in the wild woods.',
+      mood: 'adventurous',
+      budget: 'medium',
+      distance: 'long'
+    },
+    {
+      title: 'Luxury Spa Escape',
+      desc: 'Pampering, soothing massages, and delicious meals.',
+      mood: 'relaxing',
+      budget: 'high',
+      distance: 'medium'
+    },
+    {
+      title: 'Town Food Crawl',
+      desc: 'Try the best bakeries and diners within the city limits.',
+      mood: 'cultural',
+      budget: 'low',
+      distance: 'short'
+    }
+  ];
+
+  public tripSuggestions: {
+    title: string; desc: string; mood: string; budget: string; distance: string;
+  }[] = [];
 
   constructor() {}
 
@@ -62,23 +114,28 @@ export class TripPlannerComponent {
 
   /**
    * Handles trip planning form submission.
-   * Stores selections and (in a real app) would query AI/module for suggestions.
+   * Displays AI suggestions below the form, filtered by user preferences.
    */
   // PUBLIC_INTERFACE
-  // Inject router for navigation
-  constructor(private router: Router) {}
-
   public onPlan(): void {
     this.touched.distance = true;
     this.touched.mood = true;
     this.touched.budget = true;
     this.error = '';
+    this.showSuggestions = false;
 
     if (!this.isFormValid()) {
       this.error = 'Please complete all fields for trip planning.';
       return;
     }
-    // Navigate synchronously to AI Suggestions page
-    this.router.navigate(['/ai-suggestions']);
+
+    // Filter suggestions dynamically
+    this.tripSuggestions = this.allTrips.filter(
+      t =>
+        t.distance === this.distance &&
+        t.mood === this.mood &&
+        t.budget === this.budget
+    );
+    this.showSuggestions = true;
   }
 }

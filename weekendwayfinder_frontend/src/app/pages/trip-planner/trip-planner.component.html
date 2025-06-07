@@ -53,9 +53,41 @@
       <div *ngIf="error" class="error-message">{{ error }}</div>
       <button class="planner-btn" type="submit">Find Trips</button>
     </form>
-    <div class="suggestions-section">
-      <!-- The AI Suggestions component will be shown below, or yield a module route outlet here in future -->
-      <a routerLink="/ai-suggestions" class="go-ai-btn">See AI Suggestions</a>
+    <div class="suggestions-section" *ngIf="showSuggestions">
+      <div *ngIf="tripSuggestions.length > 0">
+        <div style="margin-bottom:0.6rem;">
+          <strong>AI-Powered Suggestions:</strong>
+        </div>
+        <div class="suggestions-grid">
+          <div *ngFor="let trip of tripSuggestions" class="trip-card">
+            <h3>{{ trip.title }}</h3>
+            <p class="desc">{{ trip.desc }}</p>
+            <div class="meta">
+              <span class="pill mood">{{ trip.mood | titlecase }}</span>
+              <span class="pill budget" [ngClass]="{
+                'budget': trip.budget === 'high' || trip.budget === 'medium',
+                '': trip.budget === 'low'
+              }">
+                {{
+                  trip.budget === 'low' ? 'Budget' :
+                  trip.budget === 'medium' ? '$$' :
+                  trip.budget === 'high' ? '$$$' : trip.budget
+                }}
+              </span>
+              <span class="pill distance">
+                {{
+                  trip.distance === 'short' ? 'Up to 50km' :
+                  trip.distance === 'medium' ? '50-200km' :
+                  trip.distance === 'long' ? '200km+' : trip.distance
+                }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="tripSuggestions.length === 0" style="margin-top:1.2rem;color:#F25C54;font-weight:500;">
+        No trips found for those preferences. Try other options!
+      </div>
     </div>
   </div>
 </div>

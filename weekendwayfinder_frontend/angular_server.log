@@ -521,3 +521,113 @@ Application bundle generation complete. [0.337 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.429 seconds]
+
+✘ [ERROR] TS2392: Multiple constructor implementations are not allowed. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:26:2:
+      26 │   constructor() {}
+         ╵   ~~~~~~~~~~~
+
+
+✘ [ERROR] Classes cannot contain more than one constructor
+
+    src/app/pages/trip-planner/trip-planner.component.ts:67:4:
+      67 │     constructor(router) {
+         ╵     ~~~~~~~~~~~
+
+
+✘ [ERROR] TS2392: Multiple constructor implementations are not allowed. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.ts:69:2:
+      69 │   constructor(private router: Router) {}
+         ╵   ~~~~~~~~~~~
+
+
+✘ [ERROR] Classes cannot contain more than one constructor
+
+    src/app/pages/trip-planner/trip-planner.component.ts:67:4:
+      67 │     constructor(router) {
+         ╵     ~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                    |  Raw size
+polyfills.js         | polyfills                |  90.20 kB | 
+main.js              | main                     |   6.65 kB | 
+chunk-YQOESBWP.js    | -                        | 754 bytes | 
+styles.css           | styles                   | 723 bytes | 
+
+                     | Initial total            |  98.33 kB
+
+Lazy chunk files     | Names                    |  Raw size
+chunk-PA4MJIYD.js    | trip-planner-component   |  12.28 kB | 
+chunk-KEWXAXNF.js    | sign-in-component        |   9.92 kB | 
+chunk-VE3VLI2F.js    | ai-suggestions-component |   6.76 kB | 
+chunk-2YSV2GMC.js    | home-component           |   3.38 kB | 
+
+
+Server bundles      
+Initial chunk files  | Names                    |  Raw size
+polyfills.server.mjs | polyfills.server         | 572.91 kB | 
+chunk-XT6A6FES.mjs   | -                        |   7.09 kB | 
+server.mjs           | server                   |   1.42 kB | 
+main.server.mjs      | main.server              | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
+
+Lazy chunk files     | Names                    |  Raw size
+chunk-L7DJG5ZT.mjs   | trip-planner-component   |  12.32 kB | 
+chunk-NYY2LAG3.mjs   | sign-in-component        |   9.96 kB | 
+chunk-BTFS2HB5.mjs   | ai-suggestions-component |   6.80 kB | 
+chunk-DJ27HPD6.mjs   | home-component           |   3.42 kB | 
+
+Application bundle generation complete. [0.968 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   6.65 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-GSKULDP6.js   | trip-planner-component |  13.53 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-F5JZGCXT.mjs  | -                      |   7.09 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-ENYB4CMT.mjs  | trip-planner-component |  13.56 kB | 
+
+Application bundle generation complete. [0.550 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   6.65 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-I6T3BTUT.js   | trip-planner-component |  17.15 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-GZYUJVJF.mjs  | -                      |   7.09 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-LJ2PWU7N.mjs  | trip-planner-component |  17.18 kB | 
+
+Application bundle generation complete. [0.316 seconds]
+
+Page reload sent to client(s).
