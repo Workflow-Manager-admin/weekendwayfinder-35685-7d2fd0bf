@@ -12,6 +12,7 @@
           name="email"
           required
           autocomplete="username"
+          placeholder="Enter any valid email address"
           [ngClass]="{'invalid': getFieldError('email')}"
           (blur)="onBlur('email')"
         />
@@ -28,11 +29,15 @@
           name="password"
           required
           autocomplete="current-password"
+          placeholder="Enter any password"
           [ngClass]="{'invalid': getFieldError('password')}"
           (blur)="onBlur('password')"
         />
         <div class="error-message">
           {{ getFieldError('password') }}
+        </div>
+        <div style="font-size:0.90rem; color:#888; margin-bottom:1rem;">
+          <em>Any email and any password will sign you in (demo mode).</em>
         </div>
       </div>
       <div *ngIf="error" class="error-message">{{ error }}</div>

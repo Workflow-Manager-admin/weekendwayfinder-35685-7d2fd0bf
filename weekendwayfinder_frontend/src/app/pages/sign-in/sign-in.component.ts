@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 /**
- * Sign-In Component provides a secure email/password login form with real-time validation,
- * user feedback messages, and navigation to the Home page on successful sign-in.
- * The logic is modular and ready for integration with a backend auth system in the future.
+ * Sign-In Component provides a relaxed email/password login form for demo/testing,
+ * allowing any valid email and any non-empty password. 
+ * Real-time validation for format and non-emptiness only. On successful form, navigates to Home.
+ * This is demo logic; back-end auth integration can be implemented later.
  */
 // PUBLIC_INTERFACE
 @Component({
@@ -22,8 +23,6 @@ export class SignInComponent {
   error: string = '';
   touched: { email: boolean, password: boolean } = { email: false, password: false };
   submitting: boolean = false;
-
-
 
   /**
    * Handler for input blur, used to show validations only after input is touched.
@@ -42,14 +41,12 @@ export class SignInComponent {
   getFieldError(field: 'email' | 'password'): string {
     if (field === 'email') {
       if (!this.email && this.touched.email) return 'Email is required.';
-      // PUBLIC_INTERFACE
-      // Simple email regex just for demo, NOT for real prod use!
-      const emailRegex = /^[\w.-]+@[\\w-]+\\.[a-z]{2,}$/i;
-      if (this.email && !emailRegex.test(this.email)) return 'Enter a valid email.';
+      // Simple demo email regex, not for production use!
+      const emailRegex = /^[\w.-]+@[\w-]+\.[a-z]{2,}$/i;
+      if (this.email && !emailRegex.test(this.email)) return 'Enter a valid email address.';
     } else if (field === 'password') {
       if (!this.password && this.touched.password) return 'Password is required.';
-      // Demo: show warning for short password
-      if (this.password && this.password.length < 4) return 'Password too short.';
+      // No minimum length check in demo mode.
     }
     return '';
   }
@@ -68,10 +65,10 @@ export class SignInComponent {
   }
 
   /**
-   * Handles the sign-in submission. If valid, "logs in" and navigates to Home.
-   * Shows validation feedback in real-time.
+   * Handles the sign-in submission. In demo mode, allows any valid email and non-empty password to "sign in".
+   * Navigates to Home on success.
+   * PUBLIC_INTERFACE
    */
-  // PUBLIC_INTERFACE
   signIn(): void {
     this.touched.email = true;
     this.touched.password = true;
@@ -81,7 +78,7 @@ export class SignInComponent {
       return;
     }
     this.submitting = true;
-    // Simulate a network/auth delay - prod: call auth API here!
+    // Simulate a short delay, then "sign in" and route to home.
     // eslint-disable-next-line no-undef
     setTimeout(() => {
       this.submitting = false;
