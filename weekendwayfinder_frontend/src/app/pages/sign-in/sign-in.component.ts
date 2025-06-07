@@ -39,14 +39,11 @@ export class SignInComponent {
    * @returns error message or empty string
    */
   getFieldError(field: 'email' | 'password'): string {
+    // Relaxed: Only requires a non-empty value for both fields.
     if (field === 'email') {
       if (!this.email && this.touched.email) return 'Email is required.';
-      // Simple demo email regex, not for production use!
-      const emailRegex = /^[\w.-]+@[\w-]+\.[a-z]{2,}$/i;
-      if (this.email && !emailRegex.test(this.email)) return 'Enter a valid email address.';
     } else if (field === 'password') {
       if (!this.password && this.touched.password) return 'Password is required.';
-      // No minimum length check in demo mode.
     }
     return '';
   }
@@ -56,6 +53,7 @@ export class SignInComponent {
    * @returns true if valid, false otherwise
    */
   isFormValid(): boolean {
+    // Form is valid if both email and password are non-empty (relaxed validation)
     return (
       !!this.email &&
       !!this.password &&
