@@ -1,0 +1,48 @@
+<div class="planner-wrapper">
+  <div class="planner-inputs">
+    <h2>Customize Your Weekend Adventure</h2>
+    <form (ngSubmit)="submitPreferences()" autocomplete="off">
+      <div class="input-group">
+        <label>Max Travel Distance</label>
+        <select [(ngModel)]="preferences.distance" name="distance">
+          <option value="" disabled selected>Choose distance</option>
+          <option value="50">Up to 50 miles</option>
+          <option value="100">Up to 100 miles</option>
+          <option value="300">Up to 300 miles</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>Select Mood</label>
+        <select [(ngModel)]="preferences.mood" name="mood">
+          <option value="" disabled selected>Choose mood</option>
+          <option value="relaxing">Relaxing</option>
+          <option value="adventurous">Adventurous</option>
+          <option value="cultural">Cultural</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>Budget</label>
+        <select [(ngModel)]="preferences.budget" name="budget">
+          <option value="" disabled selected>Choose budget</option>
+          <option value="low">Under $100</option>
+          <option value="medium">$100 – $300</option>
+          <option value="high">Above $300</option>
+        </select>
+      </div>
+      <button class="planner-btn">Generate Trip Suggestions</button>
+    </form>
+  </div>
+  <div class="suggestions-list">
+    <h3>AI Trip Suggestions</h3>
+    <div class="suggestions-cards">
+      <!-- Trip suggestion card stubs -->
+      <div class="suggestion-card" *ngFor="let suggestion of [1,2,3]">
+        <div class="suggestion-image"></div>
+        <div class="suggestion-content">
+          <h4>Sample Trip Destination</h4>
+          <p>AI description of an ideal destination goes here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

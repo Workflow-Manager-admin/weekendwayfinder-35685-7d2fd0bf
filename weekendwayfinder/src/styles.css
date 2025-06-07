@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #2D5F5D;
+  --color-secondary: #F7C873;
+  --color-accent: #F25C54;
+  --font-family-sans: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --background-light: #f7fbfa;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+  background: var(--background-light);
+  color: var(--color-primary);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.14s;
+}
+a:hover {
+  color: var(--color-secondary);
+}

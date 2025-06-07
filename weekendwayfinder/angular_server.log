@@ -1,0 +1,232 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Application bundle generation failed. [14.421 seconds]
+
+✘ [ERROR] Could not resolve "./home/home.component"
+
+    src/app/app.routes.ts:10:36:
+      10 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:32:
+      11 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./trip-planner/trip-planner.component"
+
+    src/app/app.routes.ts:15:36:
+      15 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:16:32:
+      16 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./home/home.component"
+
+    src/app/app.routes.ts:10:36:
+      10 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./trip-planner/trip-planner.component"
+
+    src/app/app.routes.ts:15:36:
+      15 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [199.657 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:32:
+      11 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:16:32:
+      16 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.059 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:32:
+      11 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:16:32:
+      16 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.322 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:32:
+      11 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:16:32:
+      16 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.061 seconds]
+
+✘ [ERROR] TS2307: Cannot find module './home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:32:
+      11 │ ...onent: () => import('./home/home.component').then(m => m.HomeCo...
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './trip-planner/trip-planner.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:16:32:
+      16 │ ...) => import('./trip-planner/trip-planner.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  41.26 kB | 
+styles.css           | styles           | 600 bytes | 
+
+                     | Initial total    | 132.06 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-BPZO6A5D.mjs   | -                |  41.67 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.072 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.497 seconds]
+
+✘ [ERROR] NG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:336:0:
+      336 │ <router-outlet />
+          ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:5:15:
+      5 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [3.159 seconds]
+
+✘ [ERROR] NG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:336:0:
+      336 │ <router-outlet />
+          ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:5:15:
+      5 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component AppComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/app.module.ts:10:17:
+      10 │   declarations: [AppComponent],
+         ╵                  ~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.532 seconds]
+
+✘ [ERROR] NG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:336:0:
+      336 │ <router-outlet />
+          ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:5:15:
+      5 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component AppComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/app.module.ts:14:17:
+      14 │   declarations: [AppComponent],
+         ╵                  ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996009: The `AppComponent` class is a standalone component, which can not be used in the `@NgModule.bootstrap` array. Use the `bootstrapApplication` function for bootstrap instead. [plugin angular-compiler]
+
+    src/app/app.module.ts:23:14:
+      23 │   bootstrap: [AppComponent]
+         ╵               ~~~~~~~~~~~~
+
+  The 'bootstrap' array is present on this NgModule.
+
+    src/app/app.module.ts:13:0:
+      13 │ @NgModule({
+         ╵ ~~~~~~~~~~~
+
+

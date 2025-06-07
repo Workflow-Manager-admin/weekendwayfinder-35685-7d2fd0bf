@@ -1,0 +1,129 @@
+.planner-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: #f7fbfa;
+  padding: 2rem 1rem 1rem 1rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.planner-inputs {
+  background: #fff;
+  border-radius: 1.1rem;
+  box-shadow: 0 6px 30px 0 rgba(45, 95, 93, 0.13);
+  padding: 2rem 2rem 1.5rem 2rem;
+  min-width: 320px;
+  max-width: 360px;
+}
+.planner-inputs h2 {
+  color: #2D5F5D;
+  margin-bottom: 1.4rem;
+}
+.input-group {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  color: #2D5F5D;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.input-group select {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dedede;
+  font-size: 1rem;
+  background: #fafafa;
+}
+input-group select:focus {
+  outline: 2px solid #F7C873;
+}
+.planner-btn {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 0.8rem 0;
+  background: #F25C54;
+  color: #fff;
+  font-size: 1.13rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.17s;
+}
+.planner-btn:hover {
+  background: #2D5F5D;
+}
+
+.suggestions-list {
+  flex: 1;
+  min-width: 260px;
+  max-width: 550px;
+}
+
+.suggestions-list h3 {
+  color: #2D5F5D;
+  margin-bottom: 1.1rem;
+  font-size: 1.13rem;
+  font-weight: 600;
+}
+.suggestions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+.suggestion-card {
+  background: #fff;
+  border-radius: 0.9rem;
+  box-shadow: 0 4px 18px 0 rgba(242, 92, 84, 0.07);
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.9rem;
+  max-width: 260px;
+  min-width: 180px;
+}
+
+.suggestion-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 0.67rem;
+  background: linear-gradient(135deg, #F25C54 20%, #F7C873 80%);
+}
+
+.suggestion-content h4 {
+  color: #F25C54;
+  font-size: 1rem;
+  margin: 0 0 0.3rem 0;
+}
+.suggestion-content p {
+  color: #333;
+  font-size: 0.98rem;
+  margin: 0;
+}
+@media (max-width: 1000px) {
+  .planner-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+    min-width: 0;
+    padding: 0.5rem;
+  }
+  .suggestions-cards {
+    gap: 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .planner-inputs {
+    padding: 1.2rem 0.6rem;
+    min-width: 0;
+    max-width: 97vw;
+  }
+  .suggestions-list {
+    max-width: 97vw;
+  }
+}
